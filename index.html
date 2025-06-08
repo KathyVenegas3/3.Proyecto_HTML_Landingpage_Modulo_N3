@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gato Místico</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <header>
+    <div class="menu-hamburguesa">
+      <button id="menu-toggle">☰</button>
+      <nav id="menu" class="oculto">
+        <button>Sobre mí</button>
+        <button>Testimonios</button>
+        <button>Servicios</button>
+        <button>Agenda</button>
+      </nav>
+    </div>
+    <div class="logo-header">
+      <img src="Assets\Logo Landing Gato Mistico.png" alt="Logo Gato Místico">
+    </div>
+  </header>
+
+  <main>
+    <section id="sobre-mi">
+      <div class="texto">
+        <h2>Sobre Mí</h2>
+        <p>Soy guía espiritual, tarotista y canalizadora de energías. Mi propósito es acompañarte a encontrar claridad y guía en tu camino.</p>
+      </div>
+      <div class="imagen-main">
+        <img src="Assets\Foto principal del main landing gato mistico.png" alt="Gato Místico">
+        <p class="frase">Descubre tu destino entre sombras y estrellas</p>
+      </div>
+    </section>
+
+    <section id="testimonios">
+      <h2>Testimonios</h2>
+      <div class="cajas-testimonios">
+        <div class="caja">“Sentí que hablaba directamente con mi alma. Gracias por tanta claridad" - Luna V</div>
+        <div class="caja">"La lectura de tarot fue transformadora. Repetiré y recomendaré a mis cercanos" - Ana C.</div>
+        <div class="caja">"Los registros akáshicos me ayudaron a sanar vínculos del pasado" - Camilo R.</div>
+      </div>
+    </section>
+  </main>
+
+  <section id="products">
+    <h2>Nuestros Servicios</h2>
+    <div class="productos">
+      <div class="producto">
+        <img src="Assets\Logo servicio tarot landing seccion products.png" alt="Tarot">
+        <p>Sesión de 1 hra en donde revisaremos un panorama general sobre salud, amor, dinero y trabajo<br>Valor: 35.000 CLP</p>
+      </div>
+      <div class="producto">
+        <img src="Assets\Logo servicio Runas landing seccion product.png" alt="Runas">
+        <p>Sesión de 1 hra en donde utilizaremos esta sabiduría ancestral para orientarte sobre tu futuro<br>Valor: 35.000 CLP</p>
+      </div>
+      <div class="producto">
+        <img src="Assets\Logo servicio registros seccion products.png" alt="Registros Akáshicos">
+        <p>Sesión de 1 hra en donde conectaremos con tus guías espirituales<br>Valor: 50.000 CLP</p>
+      </div>
+      <div class="producto">
+        <img src="Assets\Logo servicio carta astral seccion products.png" alt="Carta Astral">
+        <p>Sesión de 1 hra en donde trabajaremos con tu mapa de vida escrito en las estrellas<br>Valor: 60.000 CLP</p>
+      </div>
+    </div>
+    <div class="agenda-btn">
+      <button>Agenda tu sesión</button>
+    </div>
+  </section>
+
+  <footer>
+    <h2>Síguenos en nuestras RRSS</h2>
+    <div class="redes-sociales">
+      <img src="Assets\Logo instagram seccion footer.png" alt="Instagram">
+      <img src="Assets\Logo facebook seccion footer.png" alt="Facebook">
+      <img src="Assets\Logo wsp seccion footer.png" alt="WhatsApp">
+    </div>
+    <p>© Gato Místico. Todos los derechos reservados</p>
+  </footer>
+
+  <script>
+    document.getElementById("menu-toggle").addEventListener("click", function () {
+      document.getElementById("menu").classList.toggle("oculto");
+    });
+  </script>
+</body>
+</html>
