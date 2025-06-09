@@ -96,20 +96,18 @@
 
  <!--Footer-->
 
-  <footer>
-    <h2>Síguenos en nuestras RRSS</h2>
-    <div class="redes-sociales">
-      <img src="Assets\Logo instagram seccion footer.png" alt="Instagram">
-      <img src="Assets\Logo facebook seccion footer.png" alt="Facebook">
-      <img src="Assets\Logo wsp seccion footer.png" alt="WhatsApp">
-    </div>
-    <p>© Gato Místico. Todos los derechos reservados</p>
-  </footer>
-
-  <script>
-    document.getElementById("menu-toggle").addEventListener("click", function () {
-      document.getElementById("menu").classList.toggle("oculto");
-    });
-  </script>
+<footer>
+  <div class="footer-nav">
+    <button onclick="document.getElementById('products').scrollIntoView({ behavior: 'smooth' });">Servicios</button>
+    <button onclick="document.querySelector('.contenido-main').scrollIntoView({ behavior: 'smooth' });">Suscribir Newsletter</button>
+    <button onclick="document.querySelector('.agenda-btn').scrollIntoView({ behavior: 'smooth' });">Contáctanos</button>
+  </div>
+  <div class="redes-sociales">
+    <img src="Assets/Logo instagram seccion footer.png" alt="Instagram">
+    <img src="Assets/Logo facebook seccion footer.png" alt="Facebook">
+    <img src="Assets/Logo wsp seccion footer.png" alt="WhatsApp">
+  </div>
+  <p>© Gato Místico. Todos los derechos reservados</p>
+</footer>
 </body>
 </html>

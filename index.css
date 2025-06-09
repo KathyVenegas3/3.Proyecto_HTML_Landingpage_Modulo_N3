@@ -44,16 +44,33 @@ header {
 }
 
 .menu-escritorio button {
-  background-color: transparent;
+  background-color: #000;
   border: 1px solid #d5b154;
   color: #d5b154;
-  padding: 8px 12px;
+  padding: 10px 15px;
   cursor: pointer;
   font-family: 'Caudex', serif;
+  font-size: 1rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.menu-escritorio button:hover {
+  background-color: #d5b154;
+  color: #000;
 }
 
 .menu-hamburguesa {
   display: none;
+}
+
+.menu-hamburguesa button {
+  background-color: #000;
+  border: 2px solid #d5b154;
+  color: #d5b154;
+  padding: 10px 15px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  font-family: 'Caudex', serif;
 }
 
 /*Main landing page*/
@@ -109,28 +126,33 @@ main, section {
   border: 2px solid #d5b154;
   color: #d5b154;
   cursor: pointer;
+  font-family: 'Caudex', serif;
 }
 
 #sobre-mi {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  gap: 40px;
 }
 
 .texto {
-  width: 300%;
+  flex: 1;
   max-width: 600px;
 }
 
-.frase {
-  margin-top: 60px;
-  font-style: italic;
+#testimonios {
+  flex: 1;
+}
+
+#testimonios h2 {
+  margin-bottom: 20px;
 }
 
 #testimonios .cajas-testimonios {
   display: flex;
   justify-content: space-between;
-  margin-top: 20px;
   gap: 20px;
 }
 
@@ -184,12 +206,28 @@ main, section {
   color: #d5b154;
   padding: 10px 20px;
   cursor: pointer;
+  font-family: 'Caudex', serif;
 }
 
 footer {
   text-align: center;
   padding: 20px;
   background-color: #000;
+}
+
+footer .footer-nav button {
+  background-color: #000;
+  border: 1px solid #d5b154;
+  color: #d5b154;
+  font-family: 'Caudex', serif;
+  padding: 10px 15px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+footer .footer-nav button:hover {
+  background-color: #d5b154;
+  color: #000;
 }
 
 .redes-sociales img {
@@ -228,6 +266,7 @@ footer {
     color: #d5b154;
     text-align: right;
     padding: 10px 0;
+    font-family: 'Caudex', serif;
   }
 
   #menu.oculto {
@@ -242,5 +281,46 @@ footer {
 
   .header-titulo {
     font-size: 2rem;
+  }
+
+  #imagen-main {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .imagen-main {
+    order: 1;
+    max-width: 100%;
+  }
+
+  .contenido-main {
+    order: 2;
+    max-width: 100%;
+    margin-top: 20px;
+  }
+
+  #sobre-mi {
+    order: 3;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 30px;
+  }
+
+  #testimonios {
+    order: 4;
+    text-align: center;
+    width: 100%;
+  }
+
+  #testimonios .cajas-testimonios {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .caja {
+    width: 90%;
+    margin-bottom: 15px;
   }
 }
