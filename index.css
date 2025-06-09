@@ -1,51 +1,114 @@
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
+  font-family: 'Caudex', serif;
   background-color: #000;
-  color: #FFD700;
+  color: #d5b154;
 }
+
+/*Header landing page*/
 
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 20px;
+  padding: 40px 30px;
   background-color: #000;
-}
-
-.menu-hamburguesa button {
-  background: none;
-  border: 2px solid #FFD700;
-  color: #FFD700;
-  padding: 10px;
-  cursor: pointer;
-}
-
-#menu {
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-  margin-top: 10px;
-}
-
-#menu.oculto {
-  display: none;
-}
-
-#menu button {
-  background-color: #000;
-  border: 1px solid #FFD700;
-  color: #FFD700;
-  padding: 10px;
-  cursor: pointer;
+  position: relative;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 
 .logo-header img {
-  height: 60px;
+  height: 200px;
 }
 
+.header-centro {
+  flex: 1;
+  text-align: center;
+}
+
+.header-titulo {
+  font-family: 'Caudex', serif;
+  font-size: 2.6rem;
+  font-style: italic;
+  background: linear-gradient(90deg, #d5b154);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 0 auto;
+  white-space: nowrap;
+}
+
+.menu-escritorio {
+  display: flex;
+  gap: 10px;
+}
+
+.menu-escritorio button {
+  background-color: transparent;
+  border: 1px solid #d5b154;
+  color: #d5b154;
+  padding: 8px 12px;
+  cursor: pointer;
+  font-family: 'Caudex', serif;
+}
+
+.menu-hamburguesa {
+  display: none;
+}
+
+/*Main landing page*/
+
 main, section {
-  padding: 20px;
+  padding: 20px 30px 30px 30px;
+}
+
+#imagen-main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.imagen-main {
+  max-width: 50%;
+}
+
+.imagen-main img {
+  width: 100%;
+  height: auto;
+}
+
+.contenido-main {
+  max-width: 45%;
+}
+
+.contenido-main h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.contenido-main p {
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+.contenido-main input[type="email"] {
+  padding: 10px;
+  width: 100%;
+  border: 1px solid #d5b154;
+  background-color: #000;
+  color: #d5b154;
+  font-family: 'Caudex', serif;
+  margin-bottom: 10px;
+}
+
+.contenido-main button {
+  padding: 10px 20px;
+  background-color: #000;
+  border: 2px solid #d5b154;
+  color: #d5b154;
+  cursor: pointer;
 }
 
 #sobre-mi {
@@ -55,21 +118,12 @@ main, section {
 }
 
 .texto {
-  width: 50%;
-}
-
-.imagen-main {
-  text-align: center;
-  width: 40%;
-}
-
-.imagen-main img {
-  max-width: 100%;
-  height: auto;
+  width: 300%;
+  max-width: 600px;
 }
 
 .frase {
-  margin-top: 10px;
+  margin-top: 60px;
   font-style: italic;
 }
 
@@ -77,19 +131,25 @@ main, section {
   display: flex;
   justify-content: space-between;
   margin-top: 20px;
-  gap: 10px;
+  gap: 20px;
 }
 
 .caja {
-  border: 1px solid #FFD700;
+  border: 0px solid #d5b154;
   padding: 10px;
   flex: 1;
   background-color: #111;
 }
 
+/*Products landing page*/
+
+#products {
+  margin-top: 0;
+}
+
 #products h2 {
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 140px;
 }
 
 .productos {
@@ -102,7 +162,7 @@ main, section {
 .producto {
   width: 200px;
   text-align: center;
-  border: 1px solid #FFD700;
+  border: 1px solid #d5b154;
   padding: 10px;
   background-color: #111;
 }
@@ -115,13 +175,13 @@ main, section {
 
 .agenda-btn {
   text-align: center;
-  margin-top: 20px;
+  margin-top: 50px;
 }
 
 .agenda-btn button {
   background-color: #000;
-  border: 2px solid #FFD700;
-  color: #FFD700;
+  border: 2px solid #d5b154;
+  color: #d5b154;
   padding: 10px 20px;
   cursor: pointer;
 }
@@ -136,4 +196,51 @@ footer {
   width: 40px;
   height: 40px;
   margin: 10px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .menu-escritorio {
+    display: none;
+  }
+
+  .menu-hamburguesa {
+    display: block;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+  }
+
+  #menu {
+    display: flex;
+    flex-direction: column;
+    background-color: #000;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    border: 1px solid #d5b154;
+    padding: 10px;
+  }
+
+  #menu button {
+    background: none;
+    border: none;
+    color: #d5b154;
+    text-align: right;
+    padding: 10px 0;
+  }
+
+  #menu.oculto {
+    display: none;
+  }
+
+  .header-centro {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .header-titulo {
+    font-size: 2rem;
+  }
 }

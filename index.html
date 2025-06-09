@@ -5,35 +5,58 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Gato Místico</title>
   <link rel="stylesheet" href="index.css">
+
+  <!--Header landing-->
 </head>
 <body>
   <header>
-    <div class="menu-hamburguesa">
-      <button id="menu-toggle">☰</button>
-      <nav id="menu" class="oculto">
-        <button>Sobre mí</button>
-        <button>Testimonios</button>
-        <button>Servicios</button>
-        <button>Agenda</button>
-      </nav>
-    </div>
-    <div class="logo-header">
-      <img src="Assets\Logo Landing Gato Mistico.png" alt="Logo Gato Místico">
-    </div>
-  </header>
+  <div class="logo-header">
+    <img src="Assets/Logo Landing Gato Mistico.png" alt="Logo Gato Místico">
+  </div>
+
+  <div class="header-centro">
+    <div class="header-titulo">Descubre tu destino entre sombras y estrellas</div>
+  </div>
+
+  <!-- Menú escritorio visible en pantallas grandes -->
+  <nav class="menu-escritorio">
+    <button>Sobre mí</button>
+    <button>Testimonios</button>
+    <button>Servicios</button>
+    <button>Agenda</button>
+  </nav>
+
+<!-- Menú hamburguesa visible solo en móviles -->
+  <div class="menu-hamburguesa">
+    <button id="menu-toggle">☰</button>
+    <nav id="menu" class="oculto">
+      <button>Sobre mí</button>
+      <button>Testimonios</button>
+      <button>Servicios</button>
+      <button>Agenda</button>
+    </nav>
+  </div>
+</header>
+
+ <!--Main landing-->
 
   <main>
+<section id="imagen-main">
+  <div class="contenido-main">
+    <h1>Despierta tu intución y conecta con la magia</h1>
+    <p>Ingresa tu correo para recibir novedades, promociones y mensajes canalizados.</p>
+    <input type="email" placeholder="Tu correo electrónico">
+    <button>Suscribirme</button>
+  </div>
+  <div class="imagen-main">
+    <img src="Assets\Logo main landing Gato Mistico.png" alt="Gato Místico">
+  </div>
+</section>
     <section id="sobre-mi">
       <div class="texto">
         <h2>Sobre Mí</h2>
         <p>Soy guía espiritual, tarotista y canalizadora de energías. Mi propósito es acompañarte a encontrar claridad y guía en tu camino.</p>
       </div>
-      <div class="imagen-main">
-        <img src="Assets\Foto principal del main landing gato mistico.png" alt="Gato Místico">
-        <p class="frase">Descubre tu destino entre sombras y estrellas</p>
-      </div>
-    </section>
-
     <section id="testimonios">
       <h2>Testimonios</h2>
       <div class="cajas-testimonios">
@@ -43,6 +66,8 @@
       </div>
     </section>
   </main>
+
+ <!--Products landing-->
 
   <section id="products">
     <h2>Nuestros Servicios</h2>
@@ -68,6 +93,8 @@
       <button>Agenda tu sesión</button>
     </div>
   </section>
+
+ <!--Footer-->
 
   <footer>
     <h2>Síguenos en nuestras RRSS</h2>
