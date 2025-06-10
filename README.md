@@ -48,7 +48,7 @@ Cada servicio muestra su descripción, duración y valor.
 
 📌 *Prototipo visual: (agregar link o imagen del prototipo)*
 
----
+![Prototipo](Assets/Prototipado%20landing%20page%20Gato%20M%C3%ADstico_Version%20PNG.png)
 
 ## 🔧 Estructura del HTML
 
